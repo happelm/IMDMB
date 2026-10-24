@@ -5,7 +5,7 @@ permalink: index.html
 
 # IMDMB – Intune Modern Device Management Intensiv Bundle
 
-Lab instructions for the five-day Fast Lane Masterclass Intune Modern Device Management Intensiv Bundle: three days Windows, one day Android, half a day iOS/iPadOS. Use the copy button on every code block.
+Lab instructions for the five-day Fast Lane Masterclass Intune Modern Device Management Intensiv Bundle: three days Windows, one day Android, one day iOS/iPadOS. Use the copy button on every code block.
 
 > **Before the course:** Create a new Google account (@gmail.com) at home and keep its sign-in at hand. You need it on Day 4 to connect your tenant to Managed Google Play. Don't use your work account or your main private account.
 
@@ -53,6 +53,27 @@ Store, Microsoft 365, web link, MSI and Win32 apps, Windows Update rings, featur
 | 3.3 | [Windows Update rings, feature and driver updates](Instructions/Labs/LAB_03_3_windows-update.html) | 45 min |
 | 3.4 | [Deploy CL4 with Windows Autopilot](Instructions/Labs/LAB_03_4_deploy-cl4-with-autopilot.html) | 75 min |
 
+### Joining on Day 4
+
+If you join the course on Day 4 (Android and iOS/iPadOS only), you work in a cloud-only tenant: no custom domain, no Entra Connect Sync and no Windows clients. Prepare it before Lab 4.1, then follow the Day 4 and Day 5 labs as written.
+
+> **Note:** This path hasn't been run in class yet. If a step doesn't fit, tell the trainer.
+
+1. Do [Lab 1.1 Set up your tenant](Instructions/Labs/LAB_01_1_set-up-your-tenant.html), but **don't delete any demo users** – you use two of them.
+2. Microsoft 365 admin center → Users → Active users: pick two licensed demo users. They take the place of User1 and User2 in all labs. Reset their passwords so you know them.
+3. Entra admin center → Groups → New group: security group `Cloud Users`, membership type **Assigned**, members = your two demo users. The labs assign to this group by name.
+4. Do step 2 of [Lab 1.4](Instructions/Labs/LAB_01_4_groups-and-company-portal.html): the dynamic device group `All Android Devices`.
+
+Then skip or change these steps:
+
+| Lab | What to do |
+|---|---|
+| [4.4 Windows compliance policy](Instructions/Labs/LAB_04_4_windows-compliance-policy.html) | Skip it – you have no enrolled Windows clients. Follow it on your neighbor's screen. |
+| [4.5 Fully managed devices](Instructions/Labs/LAB_04_5_fully-managed-devices.html), step 14 | Import the contacts in Outlook on the web in an InPrivate window on your lab host instead of CL3. |
+| [5.5 Passwordless sign-in and passkeys](Instructions/Labs/LAB_05_5_passwordless-and-passkeys.html), steps 2 and 5 | Use an InPrivate window in Microsoft Edge on your lab host instead of CL3. |
+
+Your user names end in `onmicrosoft.com` instead of a custom domain – that doesn't change any step.
+
 ### Day 4 – Android
 
 Managed Google Play, personally owned work profile with web enrollment, compliance and Conditional Access, configuration, certificates and apps, one Windows compliance policy, fully managed devices with enrollment time grouping.
@@ -70,7 +91,7 @@ Managed Google Play, personally owned work profile with web enrollment, complian
 
 ### Day 5 – iOS/iPadOS
 
-Apple MDM push certificate, configuration and compliance without a device, apps, app protection (optional test on your own iPhone without enrollment), passwordless sign-in and passkeys. Automated device enrollment, Shared iPad and shared device mode are a trainer demo. Half day.
+Apple MDM push certificate, configuration and compliance without a device, apps, app protection (optional test on your own iPhone without enrollment), passwordless sign-in and passkeys. Automated device enrollment, Shared iPad and shared device mode are a trainer demo.
 
 **Day notes:** [Day 5 – iOS/iPadOS](Instructions/Notes/DAY_05_notes.html)
 
