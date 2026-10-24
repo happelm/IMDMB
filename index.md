@@ -57,8 +57,6 @@ Store, Microsoft 365, web link, MSI and Win32 apps, Windows Update rings, featur
 
 If you join the course on Day 4 (Android and iOS/iPadOS only), you work in a cloud-only tenant: no custom domain, no Entra Connect Sync and no Windows clients. Prepare it before Lab 4.1, then follow the Day 4 and Day 5 labs as written.
 
-> **Note:** This path hasn't been run in class yet. If a step doesn't fit, tell the trainer.
-
 1. Do [Lab 1.1 Set up your tenant](Instructions/Labs/LAB_01_1_set-up-your-tenant.html), but **don't delete any demo users** – you use two of them.
 2. Microsoft 365 admin center → Users → Active users: pick two licensed demo users. They take the place of User1 and User2 in all labs. Reset their passwords so you know them.
 3. Entra admin center → Groups → New group: security group `Cloud Users`, membership type **Assigned**, members = your two demo users. The labs assign to this group by name.
