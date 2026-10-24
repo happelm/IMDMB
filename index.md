@@ -118,9 +118,9 @@ One pod and one Microsoft 365 tenant per participant – nothing is shared, you 
 
 | System | Role | State at the start |
 |---|---|---|
-| DC1 | AD DS and DNS, domain `smart.etc` | `OU=Cloud` is the sync scope (User1, User2, CL1, CL2) |
+| DC1 | AD DS and DNS, domain `training.flane` | `OU=Cloud` is the sync scope (User1, User2, CL1, CL2) |
 | SRV1 | Windows Server, domain joined | Becomes your Microsoft Entra Connect Sync server on Day 1 |
-| PKI | One-tier Enterprise CA (Hyper-V VM on your lab host) | Switched off – not needed. Its root certificate is already distributed in `smart.etc` through AD (Lab 2.6, 5.2) |
+| PKI | One-tier Enterprise CA (Hyper-V VM on your lab host) | Switched off – not needed. Its root certificate is already distributed in `training.flane` through AD (Lab 2.6, 5.2) |
 | SCCM | Configuration Manager (Hyper-V VM on your lab host) | CL1 and CL2 have the ConfigMgr client |
 | CL1 | Windows 11, domain joined | Signs in automatically as User1 – hybrid joined on Day 2 |
 | CL2 | Windows 11, domain joined | Signs in automatically as User2 – hybrid joined on Day 2 |
@@ -134,7 +134,7 @@ On Day 4 you get an Android test device from the trainer. Day 5 needs no iPhone 
 
 | Account | Where | Used for |
 |---|---|---|
-| SMART\Administrator | DC1, SRV1 | Domain administration, Entra Connect Sync setup |
+| TRAINING\Administrator | DC1, SRV1 | Domain administration, Entra Connect Sync setup |
 | User1 | Synced from `OU=Cloud` | CL1, CL3, Android and iOS labs |
 | User2 | Synced from `OU=Cloud` | CL2, CL4, COPE and app protection labs |
 | Tenant admin | Your tenant | Microsoft 365 admin center, Entra admin center, Intune admin center |

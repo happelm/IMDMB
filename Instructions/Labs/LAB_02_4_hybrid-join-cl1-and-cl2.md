@@ -17,7 +17,7 @@ Already done: users synced and licensed (Lab 1.3), MDM user scope **All** (Lab 2
 1. DC1: Group Policy Management → create a GPO `Intune Auto-Enrollment` and link it to `OU=Workstations` (under `OU=Cloud`, with the sub-OUs Finance for CL1 and Sales for CL2).
 2. Edit the GPO: Computer Configuration → Policies → Administrative Templates → Windows Components → MDM → **Enable automatic MDM enrollment using default Azure AD credentials** = Enabled, credential type **User Credential**.
 3. SRV1: start **Azure AD Connect** from the desktop → **Configure** → **Configure device options**. Sign in as Global Administrator; if Windows offers to register the device, choose **No, sign in to this app only**.
-4. **Configure Hybrid Microsoft Entra ID join** → **Windows 10 or later domain-joined devices** → forest `smart.etc`, authentication service **Microsoft Entra ID**, enterprise admin `SMART\Administrator` → **Configure**. **Close the wizard afterwards** – an open wizard blocks the sync.
+4. **Configure Hybrid Microsoft Entra ID join** → **Windows 10 or later domain-joined devices** → forest `training.flane`, authentication service **Microsoft Entra ID**, enterprise admin `TRAINING\Administrator` → **Configure**. **Close the wizard afterwards** – an open wizard blocks the sync.
 5. CL1 and CL2: run `gpupdate /force`, then **restart** (signing out is not enough).
 6. SRV1: run a delta sync:
 

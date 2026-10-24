@@ -23,10 +23,10 @@ title: 'Day 1 notes – Foundation and hybrid identity'
 | System | Role |
 |---|---|
 | Lab tenant | Microsoft 365 E5 from GoDeploy, valid two weeks after launch |
-| DC1 | AD DS and DNS for `smart.etc`; `OU=Cloud` holds User1, User2, CL1, CL2 |
+| DC1 | AD DS and DNS for `training.flane`; `OU=Cloud` holds User1, User2, CL1, CL2 |
 | SRV1 | Microsoft Entra Connect Sync server (Tier 0) |
 | SCCM | Configuration Manager, Hyper-V VM on the lab host |
-| PKI | One-tier Enterprise CA, Hyper-V VM on the lab host – switched off, its root certificate is distributed in `smart.etc` through AD |
+| PKI | One-tier Enterprise CA, Hyper-V VM on the lab host – switched off, its root certificate is distributed in `training.flane` through AD |
 | CL1, CL2 | Domain joined, ConfigMgr client, User1/User2 – hybrid joined on Day 2 |
 | CL3, CL4 | In OOBE – Entra join (Day 2) and Windows Autopilot (Day 3) |
 
@@ -73,7 +73,7 @@ Sources: [Intune planning guide](https://learn.microsoft.com/intune/fundamentals
 
 ## 4. Custom domain and DNS
 
-- Single sign-on needs the same UPN suffix on-premises and in the cloud. Neither `smart.etc` nor the `onmicrosoft.com` domain can be renamed, so a third, routable domain goes into both: as UPN suffix in AD and as verified custom domain in Entra ID.
+- Single sign-on needs the same UPN suffix on-premises and in the cloud. Neither `training.flane` nor the `onmicrosoft.com` domain can be renamed, so a third, routable domain goes into both: as UPN suffix in AD and as verified custom domain in Entra ID.
 - A custom domain needs a TXT record for verification in Entra ID. For mail and Intune, Microsoft 365 asks for MX, `autodiscover`, SPF and the two Intune CNAMEs.
 - `enterpriseregistration` → `enterpriseregistration.windows.net`, and `enterpriseenrollment` → `enterpriseenrollment-s.manage.microsoft.com`. These CNAMEs only matter for enrollment without automatic enrollment, where Windows has to discover the server from the user's email address.
 - Microsoft is ending support for CNAME auto-discovery for Windows MDM-only enrollment on or soon after **January 15, 2027** (Message Center MC1509780). Existing devices aren't affected; users then enter the enrollment server address manually. Entra join with automatic enrollment doesn't use it.
@@ -123,13 +123,13 @@ Lab: [1.2 Add your custom domain](../Labs/LAB_01_2_add-your-custom-domain.html)
 
 | Choice | Why |
 |---|---|
-| **Customize**, not Express | `smart.etc` isn't routable; the UPN suffix has to be your verified custom domain |
+| **Customize**, not Express | `training.flane` isn't routable; the UPN suffix has to be your verified custom domain |
 | Password hash synchronization | Recommended default, works when on-prem is down |
 | Enable single sign-on **cleared** | Seamless SSO is legacy; joined Windows devices use the PRT |
 | Filter on `OU=Cloud` only, no group filtering | Group filtering is for pilots only |
 | **Create new AD account** for the sync | A domain admin must never be the sync account; the wizard refuses it |
 | Password writeback **on** | Self-service password reset for synced users |
-| Continue without all UPN suffixes verified | `smart.etc` can never be verified; only users with the custom suffix are needed |
+| Continue without all UPN suffixes verified | `training.flane` can never be verified; only users with the custom suffix are needed |
 
 Synced attributes are read-only in Entra ID – change them in Active Directory and let the next sync carry them over.
 
