@@ -83,4 +83,4 @@ lab:
 ```
 
 **Why Shift+F10 instead of audit mode:** You stay in OOBE, so CL4 needs no reset after the upload. In production you can turn Shift+F10 off in OOBE (see the Day 3 notes).
-<!-- Source: Day 3 recording 2026-10-21 PM 01:17–02:52 and Michael's decisions 2026-10-22 (the four lines from GetAP.ps1, German (Austria)). Learn: Autopilot add-devices (roles, Graph PowerShell consent), create device groups (ZTDid rule), Enrollment Status Page. Community script Get-WindowsAutopilotInfoCommunity (PowerShell Gallery). VERIFY: exact ESP setting labels and Autopilot profile field labels in the current portal. -->
+<!-- Source: Day 3 recording 2026-10-21 PM 01:17–02:52 and Michael's decisions 2026-10-22 (the four lines from GetAP.ps1, German (Austria); Fast Lane: German (Germany), Michael 2026-10-24). Learn: Autopilot add-devices (roles, Graph PowerShell consent), create device groups (ZTDid rule), Enrollment Status Page. Community script Get-WindowsAutopilotInfoCommunity (PowerShell Gallery). VERIFY: exact ESP setting labels and Autopilot profile field labels in the current portal. -->

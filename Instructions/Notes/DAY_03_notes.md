@@ -24,7 +24,7 @@ title: 'Day 3 notes – Windows apps, updates and Autopilot'
 - A **Windows web link** shows up in the **All** list of the Start menu. Start search and the category view may not show it.
 - **Win32 apps** (`.intunewin`) are at most 30 GB per app. The Intune Management Extension (IME) installs them. It installs itself when the first Win32 app or PowerShell script targets the user or device, and it checks for new Win32 apps every hour and at service or device restart.
 - **Dependencies** exist only between Win32 apps. An app graph holds at most 100 dependencies. Dependencies install before the app, but in no fixed order among themselves. Each dependency follows the Win32 retry logic (three tries, five minutes apart).
-- **Remediations** (demo only) need the Windows license verification in Tenant administration → Connectors and tokens → Windows data. Scripting and remediations are covered in MDDMI-Adv and the troubleshooting course.
+- **Remediations** (demo only) need the Windows license verification in Tenant administration → Connectors and tokens → Windows data.
 - App configuration and app protection for Windows apply only to Microsoft Edge.
 
 Sources: [Win32 app management](https://learn.microsoft.com/intune/app-management/deployment/win32) · [Add a Win32 app – dependencies](https://learn.microsoft.com/intune/app-management/deployment/add-win32#step-5-dependencies) · [Windows app types](https://learn.microsoft.com/intune/app-management/deployment/deploy-windows#supported-windows-app-types) · [Windows data and license verification](https://learn.microsoft.com/intune/privacy/enable-windows-diagnostic-data)
