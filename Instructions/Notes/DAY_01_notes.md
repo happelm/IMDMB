@@ -30,10 +30,9 @@ title: 'Day 1 notes – Foundation and hybrid identity'
 | CL1, CL2 | Domain joined, ConfigMgr client, User1/User2 – hybrid joined on Day 2 |
 | CL3, CL4 | In OOBE – Entra join (Day 2) and Windows Autopilot (Day 3) |
 
-Online participants find the vLab link in the ETC customer portal. Lab files are in `C:\Scripts` on your vLab host.
+Online participants find the vLab link in the Fast Lane Remote Labs Services portal (`https://portal.remotelabs.io/`). Lab files are in `C:\Scripts` on your vLab host.
 
 - Work **only on your lab host**, never on your own notebook. Your corporate browser is usually signed in to your production tenant – mixing up tenants is the most common and most dangerous lab mistake.
-- If the Guacamole sign-in fails, press `Ctrl+Alt+Shift`, select **Logoff** in the side menu and open your link again.
 - After two weeks the tenant is deleted for good. Keep nothing in it that you want to keep.
 
 | Portal | URL | Used for |
