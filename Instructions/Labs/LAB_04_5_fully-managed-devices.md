@@ -90,7 +90,7 @@ lab:
 
 ## Optional
 
-- Create the trusted root certificate again for fully managed devices (`AE CO Smart PKI Root Certificate`) with the `.cer` from Lab 4.3.
+- Create the trusted root certificate again for fully managed devices (`AE CO Fastlane PKI Root Certificate`) with the `.cer` from Lab 4.3.
 - Devices → Configuration → Create → Android Enterprise → **Wi-Fi** (fully managed): profile `AE CO Fake WiFi`, type **Basic**, security **WPA pre-shared key**, any SSID and key.
 
 **Note:** Enrollment time grouping puts the device into the group during enrollment, so apps and policies arrive right away. It works only with a static group whose owner is the Intune Provisioning Client, only for new enrollments, and not with the staging token. Failures show in Devices → Monitor → **Enrollment time grouping failures**. If the service principal is missing in your tenant, Learn shows how to add it with PowerShell.

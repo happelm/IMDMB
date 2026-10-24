@@ -9,7 +9,7 @@ lab:
 
 **Estimated time:** 45 minutes
 
-**Goal:** Restrict the work profile, push the Smart PKI root certificate, deploy Edge and LinkedIn, and look at the device from the admin side.
+**Goal:** Restrict the work profile, push the Fastlane Training PKI root certificate, deploy Edge and LinkedIn, and look at the device from the admin side.
 
 ## Device restrictions
 
@@ -24,8 +24,8 @@ lab:
 
 ## Trusted root certificate
 
-2. CL1 or CL2 (not CL3 or CL4): run `certlm.msc` → Trusted Root Certification Authorities → Certificates → double-click **Smart PKI** → Details → **Copy to File**. Keep the format **DER encoded binary X.509 (.CER)** and save it on the desktop as `SmartPKI`.
-3. Copy the file with Ctrl+C. Intune admin center → Configuration → Create → Android Enterprise → Templates → **Trusted certificate** (personally owned work profile): profile `AE BY Smart PKI Root Certificate`. In the upload dialog go to **Downloads**, paste the file with Ctrl+V and open it.
+2. CL1 or CL2 (not CL3 or CL4): run `certlm.msc` → Trusted Root Certification Authorities → Certificates → double-click **Fastlane Training PKI** → Details → **Copy to File**. Keep the format **DER encoded binary X.509 (.CER)** and save it on the desktop as `FastlanePKI`.
+3. Copy the file with Ctrl+C. Intune admin center → Configuration → Create → Android Enterprise → Templates → **Trusted certificate** (personally owned work profile): profile `AE BY Fastlane PKI Root Certificate`. In the upload dialog go to **Downloads**, paste the file with Ctrl+V and open it.
 4. Assign it to `All Android Devices` and check the group again after saving. On the phone, a notification says that a certificate authority was installed.
 
 ## Apps
@@ -39,7 +39,7 @@ lab:
 
 ### Checkpoint
 
-- [ ] `AE BY Device Restrictions` and `AE BY Smart PKI Root Certificate` show **Succeeded** for your device
+- [ ] `AE BY Device Restrictions` and `AE BY Fastlane PKI Root Certificate` show **Succeeded** for your device
 - [ ] The phone shows the notification about the installed certificate authority
 - [ ] Edge is installed in the work profile, LinkedIn can be installed from the work profile's Play Store
 - [ ] You can name the device actions that are missing for a personal device
