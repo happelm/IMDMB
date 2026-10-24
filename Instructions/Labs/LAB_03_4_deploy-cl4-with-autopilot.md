@@ -41,7 +41,7 @@ lab:
    | Hide change account options | Hide |
    | User account type | Standard |
    | Allow pre-provisioned deployment | No |
-   | Language (Region) | German (Austria) |
+   | Language (Region) | German (Germany) |
    | Automatically configure keyboard | Yes |
    | Apply device name template | No |
 
