@@ -41,7 +41,7 @@ All apps: Intune admin center → Apps → Windows → **Create**.
    | Update channel | Monthly Enterprise Channel |
 
    Assign it as **Available** to `Cloud Users`.
-4. **Windows web link**: name `ETC Homepage`, app URL `https://www.etc.at`. Assign it as **Required** to `All Windows 11 Devices`.
+4. **Windows web link**: name `Fast Lane Homepage`, app URL `https://www.flane.de`. Assign it as **Required** to `All Windows 11 Devices`.
 5. **Line-of-business app**: upload `C:\Scripts\intunepro.msi`. Assign it as **Available** to `Cloud Users`.
 6. CL3 as User1: open the Company Portal and install the available apps.
 7. Intune admin center → Devices → Windows → CL3: look at the app views of the device (managed apps and app inventory) and compare them with what you installed.
@@ -49,9 +49,9 @@ All apps: Intune admin center → Apps → Windows → **Create**.
 ### Checkpoint
 
 - [ ] Uptime of CL1–CL3 noted, Event 1074 at 18:00 found on CL3
-- [ ] Company Portal and `ETC Homepage` arrive on CL3 without user action
+- [ ] Company Portal and `Fast Lane Homepage` arrive on CL3 without user action
 - [ ] Store app, Microsoft 365 Apps and `intunepro.msi` installed on CL3 from the Company Portal
-- [ ] `ETC Homepage` found in Start → **All** (not through search)
+- [ ] `Fast Lane Homepage` found in Start → **All** (not through search)
 
 **Note:** The web link shows up in the **All** list of the Start menu. In class, the category view and Start search did not show it, so it looked as if it had not arrived.
 
