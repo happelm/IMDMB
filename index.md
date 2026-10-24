@@ -1,11 +1,11 @@
 ---
-title: MDDMI Lab Instructions
+title: IMDMB Lab Instructions
 permalink: index.html
 ---
 
-# MDDMI – Modern Device Management with Microsoft Intune
+# IMDMB – Intune Modern Device Management Intensiv Bundle
 
-Lab instructions for the five-day MDDMI workshop: three days Windows, one day Android, half a day iOS/iPadOS. Use the copy button on every code block.
+Lab instructions for the five-day Fast Lane Masterclass Intune Modern Device Management Intensiv Bundle: three days Windows, one day Android, half a day iOS/iPadOS. Use the copy button on every code block.
 
 > **Before the course:** Create a new Google account (@gmail.com) at home and keep its sign-in at hand. You need it on Day 4 to connect your tenant to Managed Google Play. Don't use your work account or your main private account.
 
@@ -100,7 +100,7 @@ Summary of each day with sources, for after the course.
 
 ### Resources
 
-[MDDMI link collection](https://github.com/happelm/Intune-Resources/blob/main/Intune1Links.md) – Learn articles, blogs and tools for this workshop.
+[Intune link collection](https://github.com/happelm/Intune-Resources/blob/main/Intune1Links.md) – Learn articles, blogs and tools for this workshop.
 
 ## About this guide
 
@@ -148,4 +148,4 @@ Passwords are on the pod card from the trainer.
 - Full screen in the lab portal (Guacamole): press `F11`, move the mouse to the top edge to bring back the address bar and click **Reload** (inside the session `F5` goes to the VM) – the connection to the VM reconnects at full screen size without black borders.
 - CMTrace for all .log files – Intune Management Extension logs in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`
 - Microsoft 365 admin center: admin.cloud.microsoft · Intune admin center: intune.microsoft.com · Entra admin center: entra.microsoft.com
-- Scripts used in the labs: [Labfiles folder in this repository](https://github.com/happelm/MDDMI/tree/main/Labfiles)
+- Scripts used in the labs: [Labfiles folder in this repository](https://github.com/happelm/IMDMB/tree/main/Labfiles)

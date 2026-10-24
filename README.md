@@ -1,8 +1,8 @@
-# MDDMI – Modern Device Management with Microsoft Intune
+# IMDMB – Intune Modern Device Management Intensiv Bundle
 
-Lab instructions for the five-day MDDMI workshop: three days Windows, one day Android, half a day iOS/iPadOS.
+Lab instructions for the five-day Fast Lane Masterclass Intune Modern Device Management Intensiv Bundle: three days Windows, one day Android, half a day iOS/iPadOS.
 
-- **Read online:** <https://happelm.github.io/MDDMI/>
+- **Read online:** <https://happelm.github.io/IMDMB/>
 - **Day notes:** a summary of each course day with sources – [jump to the list](#day-notes)
 
 > **Before the course:** Create a new Google account (@gmail.com) at home and keep its sign-in at hand. You need it on Day 4 to connect your tenant to Managed Google Play. Don't use your work account or your main private account.
@@ -98,7 +98,7 @@ Summary of each day with sources, for after the course.
 
 ### Resources
 
-[MDDMI link collection](https://github.com/happelm/Intune-Resources/blob/main/Intune1Links.md) – Learn articles, blogs and tools for this workshop.
+[Intune link collection](https://github.com/happelm/Intune-Resources/blob/main/Intune1Links.md) – Learn articles, blogs and tools for this workshop.
 
 ## About this guide
 
@@ -150,4 +150,4 @@ Passwords are on the pod card from the trainer.
 
 ## Known issues and feedback
 
-Known issues, workarounds and corrections are tracked in the [Issues](https://github.com/happelm/MDDMI/issues) tab. If something in a lab does not work as described, check the open issues first, then open a new one with the lab number and the step.
+Known issues, workarounds and corrections are tracked in the [Issues](https://github.com/happelm/IMDMB/issues) tab. If something in a lab does not work as described, check the open issues first, then open a new one with the lab number and the step.

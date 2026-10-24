@@ -12,7 +12,7 @@
     - androidDeviceOwnerGeneralDeviceConfiguration
 
     The script only adds objects. If a policy with the same name exists, it is skipped.
-    Lab script for MDDMI Lab 4.6 - Windows PowerShell 5.1 compatible.
+    Lab script for IMDMB Lab 4.6 - Windows PowerShell 5.1 compatible.
 
 .PARAMETER Assignment
     Assign both new policies to the group in -GroupName. Without this switch nothing is assigned.

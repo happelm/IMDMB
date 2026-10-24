@@ -183,6 +183,6 @@ Enrollment restrictions, roles and permissions, joining CL3 to Entra ID, hybrid 
 
 ## Links
 
-- [MDDMI link collection](https://github.com/happelm/Intune-Resources/blob/main/Intune1Links.md)
+- [Intune link collection](https://github.com/happelm/Intune-Resources/blob/main/Intune1Links.md)
 - [Microsoft Intune documentation](https://learn.microsoft.com/intune/)
 - [Microsoft Entra hybrid identity documentation](https://learn.microsoft.com/entra/identity/hybrid/)

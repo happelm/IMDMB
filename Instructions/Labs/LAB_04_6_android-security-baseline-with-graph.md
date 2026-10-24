@@ -14,7 +14,7 @@ lab:
 **Why:** Microsoft publishes recommended settings for Android Enterprise in three levels. Level 1 is the minimum for corporate-owned devices. A script built from that table is repeatable and reviewable – and an AI assistant can write most of it if you give it the right sources.
 
 1. Open the Learn page [Android Enterprise fully managed security configurations](https://learn.microsoft.com/intune/device-security/security-configurations/android-fully-managed) and look at the two level 1 tables: **Device compliance** and **Device restrictions**.
-2. vLab host: download `New-AndroidFMLevel1.ps1` from the [Labfiles](https://github.com/happelm/MDDMI/tree/main/Labfiles) folder to `C:\Scripts`. Open it in an editor and find each Learn setting in the script. Every setting has a comment with its name in the admin center.
+2. vLab host: download `New-AndroidFMLevel1.ps1` from the [Labfiles](https://github.com/happelm/IMDMB/tree/main/Labfiles) folder to `C:\Scripts`. Open it in an editor and find each Learn setting in the script. Every setting has a comment with its name in the admin center.
 3. vLab host: run the script and sign in with your tenant admin. Accept the permission request.
 
    ```powershell
