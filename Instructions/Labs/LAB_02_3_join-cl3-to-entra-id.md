@@ -12,7 +12,7 @@ lab:
 
 **Goal:** Turn on MDM auto-enrollment, join CL3 to Microsoft Entra ID as User1 from OOBE without Autopilot, see it enroll in Intune and test single sign-on to cloud and on-premises resources.
 
-> [!WARNING]
+> [!IMPORTANT]
 > **Online participants (Fast Lane Remote Labs) – keyboard layout:** the remote lab session translates the keyboard layout twice. If you sit at a German keyboard, choose **English (US)** when CL3 asks for the keyboard layout during OOBE – only then can you type characters like `@` and `-`. With any other layout they end up on unusual keys (not simply the US positions).
 >
 > **On a Mac, or if a character still doesn't work:** press **Shift+F10** at OOBE, type `osk` and press Enter – the on-screen keyboard opens and you click the characters you need.
@@ -20,8 +20,7 @@ lab:
 1. Intune admin center → Devices → Enrollment → Windows → **Automatic Enrollment**: set the **MDM user scope** to **All**. Leave the MAM user scope at **None** and don't change the MDM URLs. You find the same setting in the Entra admin center → Entra ID → Mobility (MDM and MAM) → Microsoft Intune.
 2. On the vLab host, open **Hyper-V Manager** and connect to CL3. CL3 starts at OOBE. Name the device `CL3`, choose **Set up for work or school** and sign in with `User1@<your domain>`. Answer the questions regarding privacy settings at your own discretion.
 
-   > [!WARNING]
-   > **Online participants – keyboard layout question:** choose **English (US)**, even if you sit at a German keyboard. If `@` or `-` still don't work: **Shift+F10** → `osk` → Enter opens the on-screen keyboard.
+   > ⌨ **Online participants – keyboard layout question:** choose **English (US)**, even if you sit at a German keyboard. If `@` or `-` still don't work: **Shift+F10** → `osk` → Enter opens the on-screen keyboard.
 
 3. Register MFA for User1. **Close the enhanced session dialog before Windows Hello starts** – Hello setup only works in the basic console. Set up a 6-digit PIN.
 4. Entra admin center → Devices → All devices: CL3 is **Microsoft Entra joined**, MDM **Microsoft Intune**, owner User1, and member of `All Windows 11 Devices`. Intune admin center → Devices → Windows: CL3 shows up a few minutes later.

@@ -14,6 +14,9 @@ lab:
 
 Do every step on your lab host, never on your own notebook: your corporate browser is often signed in to your production tenant.
 
+> [!IMPORTANT]
+> **Online participants (Fast Lane Remote Labs) – copy and paste:** copy with **Ctrl+Shift+Alt+C** and paste with **Ctrl+Shift+Alt+V**. The normal Ctrl+C / Ctrl+V don't work between your computer and the remote lab.
+
 1. Lab host: open `https://lms.godeploy.it` → **Register Now** and create your own account. **Sign in with Microsoft** usually fails – use the registration form.
 2. Register the product key you got from the trainer. Open the course and select **Launch Lab**. Provisioning takes a few minutes.
 3. Copy the user name and the *complete* password from **Office 365 Tenant Credentials** into Notepad – the password field scrolls, so make sure you get all of it. Ignore the VMs and lab instructions in the GoDeploy portal.
@@ -33,5 +36,5 @@ Do every step on your lab host, never on your own notebook: your corporate brows
 
 **Note:** If the MFA push doesn't arrive, close the browser and sign in again.
 
-**Note for online students:** The vLab can't take files from your notebook. Copy links and text into the session, not files.
+**Note for online students:** The vLab can't take files from your notebook. Copy links and text into the session (Ctrl+Shift+Alt+C / Ctrl+Shift+Alt+V), not files.
 <!-- Source: Day 1 recording 2026-10-19 (AM 02:45–03:13). VERIFY: exact admin UPN format of the GoDeploy tenant. -->

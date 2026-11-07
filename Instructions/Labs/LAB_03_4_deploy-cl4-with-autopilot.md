@@ -11,10 +11,18 @@ lab:
 
 **Goal:** Upload the hardware hash of CL4 from OOBE, assign a user-driven Entra join profile and deploy CL4 as User2.
 
+> [!IMPORTANT]
+> **Online participants (Fast Lane Remote Labs) – keyboard layout:** the remote lab session translates the keyboard layout twice. Characters like `@`, `-`, `$`, `;` or `"` can end up on unusual keys – this matters for the PowerShell lines in **Upload the hardware hash** and for the sign-in as User2 in **Deploy CL4**.
+>
+> **If a character doesn't come out right:** press **Shift+F10** (works on every OOBE screen), type `osk` and press Enter – the on-screen keyboard opens and you click the characters you need. On a Mac, use the on-screen keyboard right away.
+
 ## Upload the hardware hash
 
 1. Hyper-V Manager: start CL4. At the first OOBE screen press **Shift+F10** and type `powershell`.
 2. vLab host: open `C:\Scripts\GetAP.ps1` in Notepad and copy the lines. In CL4, run `notepad`, then use the Hyper-V menu **Clipboard → Type clipboard text** to paste them. Copy them from Notepad into PowerShell. The prompt must start with `PS`.
+
+   > ⌨ **Online participants:** check the lines in Notepad before you run them. If `-`, `$`, `;` or `"` came out wrong, fix them with the on-screen keyboard (`osk`).
+
 
    ```powershell
    Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
@@ -60,6 +68,9 @@ lab:
 ## Deploy CL4
 
 10. When the profile is **Assigned**, start CL4. Sign in as User2 and follow the Enrollment Status Page: device preparation, device setup, account setup. You can skip the Windows Hello prompt.
+
+    > ⌨ **Online participants:** if `@` doesn't type in the user name, press **Shift+F10** → `osk` → Enter and use the on-screen keyboard.
+
 11. CL4: run `hostname` and check that the Intune Management Extension is in `C:\Program Files (x86)\Microsoft Intune Management Extension`.
 
 ### Checkpoint

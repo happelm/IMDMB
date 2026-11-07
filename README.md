@@ -5,6 +5,11 @@ Lab instructions for the five-day Fast Lane Masterclass Intune Modern Device Man
 - **Read online:** <https://happelm.github.io/IMDMB/>
 - **Day notes:** a summary of each course day with sources – [jump to the list](#day-notes)
 
+> [!IMPORTANT]
+> **Online participants (Fast Lane Remote Labs) – copy and paste:** in the remote lab, copy with **Ctrl+Shift+Alt+C** and paste with **Ctrl+Shift+Alt+V**. The normal Ctrl+C / Ctrl+V don't work between your computer and the lab.
+>
+> **Keyboard:** the remote lab translates the keyboard layout twice. When a Windows VM asks for the keyboard layout, choose **English (US)** – also at a German keyboard. If `@` or `-` still don't type, open the on-screen keyboard (`osk`, at OOBE with **Shift+F10**). Details in Lab 2.3.
+
 > **Before the course:** Create a new Google account (@gmail.com) at home and keep its sign-in at hand. You need it on Day 4 to connect your tenant to Managed Google Play. Don't use your work account or your main private account.
 
 ## Labs
